@@ -1,0 +1,53 @@
+{
+   "name": "oracle_fdw",
+   "abstract": "A Foreign Data Wrapper for Oracle",
+   "description": "Provides a Foreign Data Wrapper for easy and efficient access to Oracle databases, including pushdown of WHERE and JOIN conditions as well as comprehensive EXPLAIN and ANALYZE support.",
+   "version": "2.2.0",
+   "release_status": "stable",
+   "maintainer": [
+      "Laurenz Albe"
+   ],
+   "license": "postgresql",
+   "provides": {
+      "oracle_fdw": {
+         "abstract": "A Foreign Data Wrapper for Oracle",
+         "file": "oracle_fdw--1.1.sql",
+         "docfile": "README.md",
+         "version": "2.2.0"
+      }
+   },
+   "prereqs": {
+      "runtime": {
+         "requires": {
+            "PostgreSQL": "9.1.0",
+            "Oracle": "11.2.0"
+         },
+         "recommends": {
+            "PostgreSQL": "12.0.0",
+            "Oracle": "18.3.0"
+         }
+      }
+   },
+   "resources": {
+      "homepage": "http://laurenz.github.io/oracle_fdw/",
+      "bugtracker": {
+         "web": "https://github.com/laurenz/oracle_fdw/issues"
+      },
+      "repository": {
+        "url": "git://github.com/laurenz/oracle_fdw.git",
+        "web": "https://github.com/laurenz/oracle_fdw",
+        "type": "git"
+      }
+   },
+   "generated_by": "Laurenz Albe",
+   "meta-spec": {
+      "version": "1.0.0",
+      "url": "http://pgxn.org/meta/spec.txt"
+   },
+   "tags": [
+      "foreign data wrapper",
+      "fdw",
+      "oracle",
+      "external data"
+   ]
+}
