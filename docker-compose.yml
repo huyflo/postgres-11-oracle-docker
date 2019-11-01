@@ -1,0 +1,13 @@
+version: "3"
+services:
+  db:
+    image: "postgres-11-oracle-docker:latest"
+    container_name: "postgres_fs"
+    restart: "always"
+    environment:
+        POSTGRES_PASSWORD: "strongpassword"
+    ports:
+      - "54320:5432"
+    volumes:
+    - /data/docker/postgres-11-docker/postgresdb:/var/lib/postgresql/data 
+
